@@ -5,9 +5,7 @@ public class Duck extends Bird{
 	public Duck() {
 		super();
 		setVoice("Quack, quack");
+		setCanSwim(true);
 	}	
-	
-	public void swim() {
-		System.out.println("I am swimming");
-	}
+		
 }

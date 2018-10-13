@@ -33,7 +33,7 @@ public class ButterflyTest {
 		
 		Butterfly caterpillar = new Butterfly(true);
 		caterpillar.walk();
-		assertEquals("I am crawling", outContent.toString().replace("\r\n", ""));
+		assertEquals("I am walking", outContent.toString().replace("\r\n", ""));
 		outContent.reset();
 		
 		caterpillar.fly();

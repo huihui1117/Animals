@@ -7,8 +7,6 @@ import java.io.PrintStream;
 import org.junit.Before;
 import org.junit.Test;
 
-import junit.framework.Assert;
-
 public class FishTest {
 
 	private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();

@@ -5,10 +5,12 @@ public abstract class Animal{
 	private String voice;
 	private boolean canSwim;
 	private boolean canWalk;
+	private boolean canFly;
 	
 	public Animal() {
 		this.canSwim = false;
 		this.canWalk = true;
+		this.canFly = false;
 		this.voice = "";
 	}
 
@@ -42,8 +44,22 @@ public abstract class Animal{
 		this.canWalk = canWalk;
 	}
 
+	public boolean isCanFly() {
+		return canFly;
+	}
+
+	public void setCanFly(boolean canFly) {
+		this.canFly = canFly;
+	}
+
 	public void sing() {
 		System.out.println(voice);		
+	}
+	
+	public void fly() {
+		if (canFly) {
+			System.out.println("I am flying");
+		}
 	}
 	
 	public void swim() {

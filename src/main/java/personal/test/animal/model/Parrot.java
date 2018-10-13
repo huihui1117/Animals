@@ -9,4 +9,7 @@ public class Parrot extends Bird{
 	public Parrot (String sound) {
 		setVoice(sound);
 	}
+
+	public Parrot() {		
+	}
 }

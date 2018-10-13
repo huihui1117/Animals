@@ -1,28 +1,20 @@
 package personal.test.animal.model;
 
 public class Chicken extends Bird {
-
-	private boolean isRooster;
 	
 	public Chicken() {
 		super();
-		this.isRooster = false;
+		setVoice("Cluck, cluck");
 	}
 	
 	public Chicken(boolean isRooster) {
 		super();
-		this.isRooster = isRooster;
-	}
-
-	@Override
-	public void sing() {
 		if (isRooster) {
-			System.out.println("Cock-a-doodle-doo");
+			setVoice("Cock-a-doodle-doo");
 		}else {
-			System.out.println("Cluck, cluck");
+			setVoice("Cluck, cluck");
 		}
-		
-	}
+	}	
 	
 	@Override
 	public void fly() {

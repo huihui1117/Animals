@@ -74,4 +74,31 @@ public class BirdTest {
 		assertEquals("", outContent.toString().replace("\r\n", ""));
 
 	}
+	
+	@Test public void testParrot() {
+		Parrot parrot1 = new Parrot(new Dog());
+		parrot1.sing();
+		assertEquals("Woof, woof", outContent.toString().replace("\r\n", ""));
+		outContent.reset();
+		
+		Parrot parrot2 = new Parrot(new Cat());
+		parrot2.sing();
+		assertEquals("Meow", outContent.toString().replace("\r\n", ""));
+		outContent.reset();
+		
+		Parrot parrot3 = new Parrot(new Chicken(true));
+		parrot3.sing();
+		assertEquals("Cock-a-doodle-doo", outContent.toString().replace("\r\n", ""));
+		outContent.reset();
+		
+		Parrot parrot4 = new Parrot(new Duck());
+		parrot4.sing();
+		assertEquals("Quack, quack", outContent.toString().replace("\r\n", ""));
+		outContent.reset();
+		
+		Parrot parrot = new Parrot("Ring Ring");
+		parrot.sing();
+		assertEquals("Ring Ring", outContent.toString().replace("\r\n", ""));
+		outContent.reset();
+	}
 }

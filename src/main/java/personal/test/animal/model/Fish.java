@@ -1,11 +1,12 @@
 package personal.test.animal.model;
 
-public class Duck extends Bird{
+public class Fish extends Animal{
 
-	public Duck() {
-		super();
-		setVoice("Quack, quack");
-	}	
+	@Override
+	public void sing() {}
+	
+	@Override
+	public void walk() {}
 	
 	public void swim() {
 		System.out.println("I am swimming");

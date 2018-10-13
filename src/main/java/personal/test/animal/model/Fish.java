@@ -8,6 +8,7 @@ public class Fish extends Animal{
 	public Fish() {
 		super();
 		setCanSwim(true);
+		setCanWalk(false);
 	}
 
 	protected String getBody() {
@@ -25,9 +26,6 @@ public class Fish extends Animal{
 	protected void setCharacter(String character) {
 		this.character = character;
 	}
-
-	@Override
-	public void sing() {}
 	
 	@Override
 	public void walk() {}	

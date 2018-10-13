@@ -4,14 +4,18 @@ public abstract class Animal{
 	
 	private String voice;
 	private boolean canSwim;
+	private boolean canWalk;
 	
 	public Animal() {
 		this.canSwim = false;
+		this.canWalk = true;
 		this.voice = "";
 	}
 
 	public void walk() {
-		System.out.println("I am walking");
+		if (isCanWalk()) {
+			System.out.println("I am walking");
+		}
 	}
 
 	public String getVoice() {
@@ -28,6 +32,14 @@ public abstract class Animal{
 
 	public void setCanSwim(boolean canSwim) {
 		this.canSwim = canSwim;
+	}
+
+	public boolean isCanWalk() {
+		return canWalk;
+	}
+
+	public void setCanWalk(boolean canWalk) {
+		this.canWalk = canWalk;
 	}
 
 	public void sing() {

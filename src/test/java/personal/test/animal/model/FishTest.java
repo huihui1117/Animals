@@ -56,4 +56,25 @@ public class FishTest {
 		assertEquals("Small and colourful", shark.getBody());
 		assertEquals("Makes jokes", shark.getCharacter());
 	}
+	
+	@Test
+	public void testDolphinWalk() {
+		Dolphin dolphin = new Dolphin();
+		dolphin.walk();
+		assertEquals("", outContent.toString().replace("\r\n", ""));
+	}
+
+	@Test
+	public void testDolphinSing() {
+		Dolphin dolphin = new Dolphin();
+		dolphin.sing();
+		assertEquals("", outContent.toString().replace("\r\n", ""));
+	}
+	
+	@Test 
+	public void testDolphinSwim() {
+		Dolphin dolphin = new Dolphin();
+		dolphin.swim();
+		assertEquals("I am swimming", outContent.toString().replace("\r\n", ""));
+	}
 }

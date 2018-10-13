@@ -36,4 +36,10 @@ public class BirdTest {
 		bird.fly();
 		assertEquals("I am flying", outContent.toString().replace("\r\n", ""));
 	}
+	
+	@Test
+	public void testSing() {
+		bird.sing();
+		assertEquals("I am singing~", outContent.toString().replace("\r\n", ""));
+	}
 }
